@@ -7,6 +7,9 @@ function setup() {
     line(width / 2, 0, width / 2, height)
     line(0, pw * 13, width, pw * 13)
     noStroke()
+    drawCrescentMoon()
+    drawSun()
+    drawBody()
     scotchBonnet()
     drawEyes()
     drawMouth()
@@ -51,4 +54,37 @@ function scotchBonnet() {
   rect(pw * 16, pw * 6, pw, pw * 4)
   fill('#2A5E1D')
   rect(pw * 15, pw * 5, pw * 2, pw)
+}
+
+function drawBody() {
+  fill(0)
+  rect(pw * 10, pw * 22, pw * 12, pw * 10)
+  rect(pw * 11, pw * 21, pw * 10, pw)
+  rect(pw * 12, pw * 20, pw * 8, pw)
+}
+
+function drawCrescentMoon() {
+  fill(255)
+  rect(pw * 26, pw * 2, pw * 2, pw)
+  rect(pw * 28, pw * 3, pw, pw)
+  rect(pw * 29, pw * 4, pw, pw * 2)
+  rect(pw * 28, pw * 6, pw, pw)
+  rect(pw * 26, pw * 7, pw * 2, pw)
+}
+
+function drawSun() {
+  fill('#FFEF5C')
+  rect(pw * 4, pw * 3, pw * 3, pw * 3)
+  rect(pw * 2, pw * 1, pw, pw)
+  rect(pw * 3, pw * 2, pw, pw)
+  rect(pw * 8, pw * 1, pw, pw)
+  rect(pw * 7, pw * 2, pw, pw)
+  rect(pw * 7, pw * 6, pw, pw)
+  rect(pw * 8, pw * 7, pw, pw)
+  rect(pw * 3, pw * 6, pw, pw)
+  rect(pw * 2, pw * 7, pw, pw)
+  rect(pw * 5, pw * 1, pw, pw)
+  rect(pw * 8, pw * 4, pw, pw)
+  rect(pw * 5, pw * 7, pw, pw)
+  rect(pw * 2, pw * 4, pw, pw)
 }
